@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Zasviť</title>
-	<meta name="color-scheme" content="light dark" />
-	<style>
-		body {
-			font-family: sans-serif;
-		}
-	</style>
-</head>
-<body>
-	<h1>Karel Gott</h1>
-	<p>Videomapping na Rudolfinum</p>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zasviť</title>
+		<meta name="color-scheme" content="light dark" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				min-height: 100vh;
+				font-family: sans-serif;
+				max-width: 80rem;
+				margin: 0 auto;
+				padding: 1rem;
+				text-align: center;
+				display: grid;
+				grid-template-rows: 1fr auto 2fr;
+			}
+			.content {
+				grid-row: 2;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<h1>Odkaz Karla Gotta - video mapping</h1>
+			<p>Videomapping na Rudolfinum</p>
+			<img src="preview.jpg" width="1280" height="688" alt="náhled" />
+		</div>
+	</body>
 </html>
